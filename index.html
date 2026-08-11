@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Webloop Agency — We Build Digital Experiences That Move Businesses Forward</title>
+    <meta
+      name="description"
+      content="Webloop Agency designs and develops modern websites, digital experiences and creative solutions that help brands grow online. Web development, UI/UX, branding, SEO and e-commerce."
+    />
+    <meta name="author" content="Webloop Agency" />
+    <meta name="theme-color" content="#12100E" />
+    <link rel="canonical" href="https://webloopagency.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Webloop Agency" />
+    <meta property="og:title" content="Webloop Agency — Digital Experiences That Move Businesses Forward" />
+    <meta
+      property="og:description"
+      content="We design and develop modern websites, digital experiences, and creative solutions that help brands grow online."
+    />
+    <meta property="og:url" content="https://webloopagency.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css?v=2" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Webloop Agency",
+        "description": "Digital agency specialising in web development, UI/UX design, branding, SEO and e-commerce.",
+        "url": "https://webloopagency.com/",
+        "email": "hello@webloopagency.com",
+        "telephone": "+92 300 1234567",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Karachi",
+          "addressCountry": "PK"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- Loading animation -->
+    <div class="preloader" aria-hidden="true">
+      <div class="glow glow--accent" style="left: 50%; top: 50%; width: 420px; height: 420px; transform: translate(-50%, -50%)"></div>
+      <div class="preloader__inner">
+        <span class="preloader__mark">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" aria-hidden="true">
+            <path d="M4 8.2 7 16l3-5.4 3 5.4 3-7.8" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="19" cy="8.6" r="1.9" fill="currentColor" />
+          </svg>
+        </span>
+        <span style="display: flex; flex-direction: column; align-items: center">
+          <span class="preloader__word">WEBLOOP</span>
+          <span class="preloader__track"><span class="preloader__fill"></span></span>
+        </span>
+      </div>
+    </div>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ============================================================ Navbar -->
+    <header class="navbar">
+      <nav class="shell navbar__inner" aria-label="Primary">
+        <a class="logo" href="index.html" aria-label="Webloop Agency — home">
+          <span class="logo__mark">
+            <svg viewBox="0 0 24 24" width="21" height="21" fill="none" aria-hidden="true">
+              <path d="M4 8.2 7 16l3-5.4 3 5.4 3-7.8" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="19" cy="8.6" r="1.9" fill="currentColor" />
+            </svg>
+          </span>
+          <span class="logo__text">
+            <span class="logo__name">WEBLOOP</span>
+            <span class="logo__label">AGENCY</span>
+          </span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="navbar__cta">
+          <a class="btn btn--primary btn--sm" href="contact.html">
+            Start a Project
+            <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12h15m-5.5-5.5L19.5 12 14 17.5" /></svg>
+          </a>
+        </div>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <svg class="ic nav-toggle__open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5h16M4 12h16M4 16.5h10" /></svg>
+          <svg class="ic nav-toggle__close" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+        </button>
+      </nav>
+      <span class="navbar__progress"></span>
+    </header>
+
+    <!-- Mobile navigation -->
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <ul class="mobile-menu__list">
+        <li><a href="index.html" aria-current="page" style="animation-delay: 60ms">Home <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg></a></li>
+        <li><a href="about.html" style="animation-delay: 120ms">About <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg></a></li>
+        <li><a href="services.html" style="animation-delay: 180ms">Services <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg></a></li>
+        <li><a href="portfolio.html" style="animation-delay: 240ms">Portfolio <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg></a></li>
+        <li><a href="contact.html" style="animation-delay: 300ms">Contact <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg></a></li>
+      </ul>
+
+      <div class="mobile-menu__foot">
+        <a class="btn btn--primary btn--lg btn--block" href="contact.html">
+          Start a Project
+          <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12h15m-5.5-5.5L19.5 12 14 17.5" /></svg>
+        </a>
+        <div class="mobile-menu__contact">
+          <a href="mailto:hello@webloopagency.com">hello@webloopagency.com</a>
+          <a href="tel:+923001234567">+92 300 1234567</a>
+          <span>Karachi, Pakistan</span>
+        </div>
+        <div class="socials">
+          <a href="https://instagram.com/webloopagency" target="_blank" rel="noreferrer noopener" aria-label="Webloop Agency on Instagram">
+            <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5.2" fill="none" stroke="currentColor" stroke-width="1.7" /><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7" /><circle cx="17.1" cy="6.9" r="1.2" fill="currentColor" /></svg>
+          </a>
+          <a href="https://linkedin.com/company/webloopagency" target="_blank" rel="noreferrer noopener" aria-label="Webloop Agency on LinkedIn">
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="4" /><path d="M7.6 10.2v7M7.6 7.2v.1" stroke-width="1.9" /><path d="M11.4 17.2v-7m0 2.2c.5-1.4 1.7-2.2 3-2.2 1.7 0 2.6 1.1 2.6 3v4.2" /></svg>
+          </a>
+          <a href="https://facebook.com/webloopagency" target="_blank" rel="noreferrer noopener" aria-label="Webloop Agency on Facebook">
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="4" /><path d="M14.8 8.2h-1.3c-1 0-1.5.6-1.5 1.6V11h2.6l-.4 2.6h-2.2v5" /><path d="M9.6 11h2.4" /></svg>
+          </a>
+          <a href="https://behance.net/webloopagency" target="_blank" rel="noreferrer noopener" aria-label="Webloop Agency on Behance">
+            <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M2.6 7.4h4.3c1.6 0 2.5.8 2.5 2 0 1-.6 1.7-1.5 1.9 1.2.2 1.9 1 1.9 2.2 0 1.5-1.1 2.5-3 2.5H2.6V7.4Zm2 3.3h1.9c.7 0 1-.3 1-.8s-.3-.8-1-.8H4.6v1.6Zm0 3.7h2.1c.8 0 1.2-.3 1.2-.9s-.4-.9-1.2-.9H4.6v1.8Z" fill="currentColor" /><path d="M14.2 8.2h4.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /><path d="M12.6 13.1h6.8c0-2-1.3-3.4-3.3-3.4s-3.5 1.5-3.5 3.5 1.4 3.5 3.5 3.5c1.5 0 2.7-.7 3.1-1.9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <main id="main" class="page-enter">
+      <!-- ========================================================== Hero -->
+      <section class="hero">
+        <div class="grid-lines"></div>
+        <div class="glow glow--accent" style="left: -8%; top: 4%; width: 460px; height: 460px"></div>
+        <div class="glow glow--violet" style="right: -6%; top: 18%; width: 420px; height: 420px"></div>
+        <div class="glow glow--cyan" style="bottom: -14%; left: 35%; width: 380px; height: 380px"></div>
+
+        <div class="shell hero__grid">
+          <div>
+            <span class="badge" style="animation: fade-up 0.7s var(--ease) both 80ms">
+              <span class="pulse-dot"></span>
+              A digital agency from Karachi, working worldwide
+            </span>
+
+            <h1 style="animation: fade-up 0.8s var(--ease) both 160ms">
+              Building <em>Digital Experiences</em> That Make Businesses Stand Out.
+            </h1>
+
+            <p class="hero__lead" style="animation: fade-up 0.8s var(--ease) both 250ms">
+              We design and develop modern websites, digital experiences, and creative solutions that help brands grow online.
+            </p>
+
+            <div class="hero__actions" style="animation: fade-up 0.8s var(--ease) both 330ms">
+              <a class="btn btn--primary btn--lg" href="contact.html">
+                Start a Project
+                <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12h15m-5.5-5.5L19.5 12 14 17.5" /></svg>
+              </a>
+              <a class="btn btn--secondary btn--lg" href="portfolio.html">
+                View Our Work
+                <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg>
+              </a>
+            </div>
+
+            <ul class="hero__proof" style="animation: fade-up 0.8s var(--ease) both 410ms">
+              <li><svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 4 2.3 5 5.4.6-4 3.7 1.1 5.3L12 15.9 7.2 18.6l1.1-5.3-4-3.7 5.4-.6L12 4Z" /></svg> 98% client satisfaction</li>
+              <li><svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 6.5" /></svg> 50+ projects shipped</li>
+              <li><svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 3 5.5 13.4h5.3L10 21l8.2-10.6h-5.4L13.5 3Z" /></svg> Avg. 1.2s load time</li>
+            </ul>
+          </div>
+
+          <!-- Animated hero visual -->
+          <div class="hero__visual" style="animation: fade-up 0.9s var(--ease) both 380ms">
+            <span class="hero__ring"></span>
+
+            <div class="hero__panel glass">
+              <div class="panel__chrome">
+                <span></span><span></span><span></span><span class="panel__bar"></span>
+              </div>
+
+              <div class="panel__body">
+                <span class="panel__sweep"></span>
+
+                <div class="panel__top">
+                  <div>
+                    <p class="panel__kicker">Performance</p>
+                    <p class="panel__figure">+142<span>%</span></p>
+                    <p class="panel__note">conversions after relaunch</p>
+                  </div>
+                  <span class="panel__live">Live</span>
+                </div>
+
+                <svg class="panel__chart" viewBox="0 0 320 120" role="img" aria-label="Chart showing conversion growth after relaunch">
+                  <defs>
+                    <linearGradient id="hero-area" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#E4572E" stop-opacity=".35" />
+                      <stop offset="1" stop-color="#E4572E" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="hero-line" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0" stop-color="#D9A441" />
+                      <stop offset="1" stop-color="#E4572E" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M4 100 52 84 100 92 148 60 196 68 244 34 316 18V120H4Z" fill="url(#hero-area)" />
+                  <path d="M4 100 52 84 100 92 148 60 196 68 244 34 316 18" fill="none" stroke="url(#hero-line)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+                  <circle cx="316" cy="18" r="4.5" fill="#E4572E" />
+                </svg>
+
+                <dl class="panel__metrics">
+                  <div class="panel__metric"><dt>LCP</dt><dd>0.9s</dd></div>
+                  <div class="panel__metric"><dt>CLS</dt><dd>0.01</dd></div>
+                  <div class="panel__metric"><dt>SEO</dt><dd>100</dd></div>
+                </dl>
+              </div>
+            </div>
+
+            <div class="chip chip--a glass">
+              <span class="chip__icon">
+                <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19.5 8.5a2.6 2.6 0 0 0-3.7-3.7L4.3 16.4V20Z" /><path d="M14.5 6.5 17.9 9.9" /></svg>
+              </span>
+              <span><strong>Design system</strong><small>64 components</small></span>
+            </div>
+
+            <div class="chip chip--b glass">
+              <span class="chip__icon chip__icon--cyan">
+                <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 7.5 3.5 12l5 4.5M15.5 7.5 20.5 12l-5 4.5M13.5 4.5l-3 15" /></svg>
+              </span>
+              <span><strong>Shipped</strong><small>on schedule</small></span>
+            </div>
+          </div>
+        </div>
+
+        <a class="hero__scroll" href="#services">
+          Scroll
+          <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5v15m-5.5-5.5L12 19.5 17.5 14" /></svg>
+        </a>
+      </section>
+
+      <!-- ======================================================= Clients -->
+      <section class="marquee" aria-label="Selected clients">
+        <div class="marquee__track">
+          <span>NOVA FINANCE</span><span>URBANNEST</span><span>LUMINA</span><span>VERTEX</span>
+          <span>AURA STUDIO</span><span>FITCORE</span><span>HELIO LABS</span><span>NORTHBAY</span>
+        </div>
+      </section>
+
+      <!-- ========================================================= Stats -->
+      <section class="section section--tight" aria-label="Agency statistics">
+        <div class="shell">
+          <div class="stats__panel glass reveal">
+            <div class="stats__grid">
+              <div class="stat">
+                <p class="stat__value"><span data-count="50" data-suffix="+">50+</span></p>
+                <p class="stat__label">Projects Completed</p>
+              </div>
+              <div class="stat">
+                <p class="stat__value"><span data-count="30" data-suffix="+">30+</span></p>
+                <p class="stat__label">Happy Clients</p>
+              </div>
+              <div class="stat">
+                <p class="stat__value"><span data-count="3" data-suffix="+">3+</span></p>
+                <p class="stat__label">Years Experience</p>
+              </div>
+              <div class="stat">
+                <p class="stat__value"><span data-count="98" data-suffix="%">98%</span></p>
+                <p class="stat__label">Client Satisfaction</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================== Services -->
+      <section class="section" id="services">
+        <div class="glow glow--violet" style="right: -10%; top: 20%; width: 380px; height: 380px"></div>
+
+        <div class="shell section__inner">
+          <div class="section__head">
+            <div class="heading">
+              <span class="eyebrow reveal">What we do</span>
+              <h2 class="heading__title reveal" data-delay="80">Services built around <em>how you grow.</em></h2>
+              <p class="heading__lead reveal" data-delay="160">
+                Six disciplines, one team. We plug into your business where you need us most — and we are just as happy owning the whole thing end to end.
+              </p>
+            </div>
+            <a class="btn btn--secondary reveal" data-delay="200" href="services.html">
+              All services
+              <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg>
+            </a>
+          </div>
+
+          <div class="grid-3 mt-3">
+            <a class="card spotlight service-card reveal" href="services.html#web-development">
+              <span class="service-card__index">01</span>
+              <span class="icon-box"><svg class="ic ic--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 7.5 3.5 12l5 4.5M15.5 7.5 20.5 12l-5 4.5M13.5 4.5l-3 15" /></svg></span>
+              <h3>Web Development</h3>
+              <p>Modern, fast, responsive and scalable websites built on clean, maintainable code.</p>
+              <span class="service-card__more">Learn more <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg></span>
+            </a>
+
+            <a class="card spotlight service-card reveal" data-delay="70" href="services.html#ui-ux-design">
+              <span class="service-card__index">02</span>
+              <span class="icon-box"><svg class="ic ic--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19.5 8.5a2.6 2.6 0 0 0-3.7-3.7L4.3 16.4V20Z" /><path d="M14.5 6.5 17.9 9.9" /></svg></span>
+              <h3>UI/UX Design</h3>
+              <p>Beautiful, intuitive interfaces designed around real user behaviour.</p>
+              <span class="service-card__more">Learn more <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg></span>
+            </a>
+
+            <a class="card spotlight service-card reveal" data-delay="140" href="services.html#branding">
+              <span class="service-card__index">03</span>
+              <span class="icon-box"><svg class="ic ic--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 2 2 0 0 0 1.6-3.2 2 2 0 0 1 1.6-3.2H18a3 3 0 0 0 3-3A9 9 0 0 0 12 3Z" /><circle cx="8" cy="10.5" r="1.1" /><circle cx="12" cy="7.8" r="1.1" /><circle cx="16" cy="10.5" r="1.1" /></svg></span>
+              <h3>Branding</h3>
+              <p>Complete visual identities that make brands memorable and consistent.</p>
+              <span class="service-card__more">Learn more <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg></span>
+            </a>
+
+            <a class="card spotlight service-card reveal" href="services.html#seo">
+              <span class="service-card__index">04</span>
+              <span class="icon-box"><svg class="ic ic--lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" /><path d="m16 16 4.5 4.5" /></svg></span>
+              <h3>SEO</h3>
+              <p>Search engine optimisation that improves visibility and organic growth.</p>
+              <span class="service-card__more">Learn more <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg></span>
+            </a>
+
+            <a class="card spotlight service-card reveal" data-delay="70" href="services.html#ecommerce-development">
+              <span class="service-card__index">05</span>
+              <span class="icon-box"><svg class="ic ic--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2.2l2.3 11.2a1.6 1.6 0 0 0 1.6 1.3h8.2a1.6 1.6 0 0 0 1.6-1.2L21 8H6" /><circle cx="9.5" cy="20" r="1.3" /><circle cx="17.5" cy="20" r="1.3" /></svg></span>
+              <h3>E-Commerce Development</h3>
+              <p>High-converting online stores engineered for growing businesses.</p>
+              <span class="service-card__more">Learn more <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg></span>
+            </a>
+
+            <a class="card spotlight service-card reveal" data-delay="140" href="services.html#digital-marketing">
+              <span class="service-card__index">06</span>
+              <span class="icon-box"><svg class="ic ic--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4a2 2 0 0 0 2 2h2l8 4V4L8 8H6a2 2 0 0 0-2 2Z" /><path d="M19 9.5a3.5 3.5 0 0 1 0 5" /><path d="M8 16v3.5" /></svg></span>
+              <h3>Digital Marketing</h3>
+              <p>Digital strategies that put your brand in front of the right audience.</p>
+              <span class="service-card__more">Learn more <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== Why us -->
+      <section class="section section--alt">
+        <div class="glow glow--accent" style="left: -8%; bottom: -10%; width: 420px; height: 420px"></div>
+
+        <div class="shell section__inner split">
+          <div class="split__sticky">
+            <div class="heading">
+              <span class="eyebrow reveal">Why Webloop</span>
+              <h2 class="heading__title reveal" data-delay="80">Why clients keep <em>coming back.</em></h2>
+              <p class="heading__lead reveal" data-delay="160">
+                No account-manager telephone game, no template farm. You work directly with the people building your project, and the work is judged on results — not on how many slides we made.
+              </p>
+            </div>
+            <a class="btn btn--secondary reveal mt-3" data-delay="220" href="about.html">
+              Meet the team
+              <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12h15m-5.5-5.5L19.5 12 14 17.5" /></svg>
+            </a>
+          </div>
+
+          <ul class="stack-lg" style="gap: 0.75rem">
+            <li class="feature reveal">
+              <span class="icon-box icon-box--sm"><svg class="ic ic--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3.5 12.8 8l4.5 1.8-4.5 1.8L11 16l-1.8-4.4L4.7 9.8 9.2 8 11 3.5Z" /><path d="M18 14.5 18.9 17l2.6 1-2.6 1-.9 2.5-.9-2.5-2.6-1 2.6-1 .9-2.5Z" /></svg></span>
+              <div>
+                <h3>Creative &amp; Modern Design</h3>
+                <p>Every project is designed from scratch around your brand — never a recycled theme, never a template with your logo dropped in.</p>
+              </div>
+            </li>
+            <li class="feature reveal" data-delay="80">
+              <span class="icon-box icon-box--sm"><svg class="ic ic--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 3 5.5 13.4h5.3L10 21l8.2-10.6h-5.4L13.5 3Z" /></svg></span>
+              <div>
+                <h3>Fast &amp; Responsive Websites</h3>
+                <p>Performance is a feature. We build to strict speed budgets so your site feels instant on a flagship laptop and a mid-range phone alike.</p>
+              </div>
+            </li>
+            <li class="feature reveal" data-delay="160">
+              <span class="icon-box icon-box--sm"><svg class="ic ic--lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9.5" cy="8" r="3.3" /><path d="M3.5 19.5a6 6 0 0 1 12 0" /><path d="M16.2 5.2a3.3 3.3 0 0 1 0 6.3" /><path d="M18 14.6a6 6 0 0 1 3 4.9" /></svg></span>
+              <div>
+                <h3>User-Focused Experiences</h3>
+                <p>Research, journey mapping and testing shape the interface, so visitors find what they need and take the action you care about.</p>
+              </div>
+            </li>
+            <li class="feature reveal" data-delay="240">
+              <span class="icon-box icon-box--sm"><svg class="ic ic--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8.5 4.6L12 12.2 3.5 7.6 12 3Z" /><path d="m4.2 12 7.8 4.2 7.8-4.2" /><path d="m4.2 16.4 7.8 4.2 7.8-4.2" /></svg></span>
+              <div>
+                <h3>Scalable Solutions</h3>
+                <p>Component-driven architecture and clean documentation mean your site grows with the business instead of being rebuilt every two years.</p>
+              </div>
+            </li>
+            <li class="feature reveal" data-delay="320">
+              <span class="icon-box icon-box--sm"><svg class="ic ic--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5.5c0 4.3 2.9 8.1 7 9.5 4.1-1.4 7-5.2 7-9.5V6l-7-3Z" /><path d="m9.2 12 2 2 3.6-3.8" /></svg></span>
+              <div>
+                <h3>Reliable Support</h3>
+                <p>Launch day is the start. Maintenance, monitoring and a real human on the other end of the thread whenever you need one.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================================================ Featured work -->
+      <section class="section">
+        <div class="shell">
+          <div class="section__head">
+            <div class="heading">
+              <span class="eyebrow reveal">Featured work</span>
+              <h2 class="heading__title reveal" data-delay="80">Projects we're <em>proud of.</em></h2>
+              <p class="heading__lead reveal" data-delay="160">
+                A snapshot of recent launches — fintech, commerce, property and SaaS — each built to hit a specific business number.
+              </p>
+            </div>
+            <a class="btn btn--secondary reveal" data-delay="200" href="portfolio.html">
+              View all work
+              <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg>
+            </a>
+          </div>
+
+          <div class="grid-2 work-grid mt-3">
+            <!-- Nova Finance -->
+            <article class="card spotlight work-card reveal">
+              <div class="work-card__media">
+                <svg class="work-card__art" viewBox="0 0 800 560" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Nova Finance dashboard artwork" style="--c1: #5b7c99; --c2: #9fb8ad">
+                  <rect width="800" height="560" fill="#16130F" />
+                  <circle cx="640" cy="80" r="200" fill="var(--c1)" opacity=".16" />
+                  <circle cx="120" cy="510" r="170" fill="var(--c2)" opacity=".1" />
+                  <rect x="48" y="44" width="704" height="472" rx="20" fill="#1A1712" stroke="#332B21" />
+                  <path d="M48 64a20 20 0 0 1 20-20h664a20 20 0 0 1 20 20v22H48Z" fill="#211C16" />
+                  <circle cx="76" cy="65" r="5" fill="#5A4C3A" /><circle cx="94" cy="65" r="5" fill="#5A4C3A" /><circle cx="112" cy="65" r="5" fill="#5A4C3A" />
+                  <rect x="140" y="57" width="230" height="16" rx="8" fill="#272119" />
+                  <rect x="80" y="112" width="150" height="14" rx="7" fill="#5A4C3A" />
+                  <rect x="80" y="140" width="96" height="10" rx="5" fill="#3A3126" />
+                  <rect x="612" y="108" width="112" height="34" rx="17" fill="var(--c1)" />
+                  <rect x="80" y="176" width="330" height="180" rx="16" fill="#1E1A14" stroke="#332B21" />
+                  <path d="M106 320 152 288 198 300 244 246 290 262 336 214 384 228V336H106Z" fill="var(--c2)" opacity=".16" />
+                  <path d="M106 320 152 288 198 300 244 246 290 262 336 214 384 228" fill="none" stroke="var(--c2)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                  <circle cx="336" cy="214" r="6" fill="var(--c2)" />
+                  <rect x="434" y="176" width="290" height="180" rx="16" fill="#1E1A14" stroke="#332B21" />
+                  <rect x="464" y="262" width="20" height="70" rx="6" fill="#443A2C" /><rect x="500" y="214" width="20" height="118" rx="6" fill="#443A2C" /><rect x="536" y="240" width="20" height="92" rx="6" fill="#443A2C" /><rect x="572" y="182" width="20" height="150" rx="6" fill="#443A2C" /><rect x="608" y="206" width="20" height="126" rx="6" fill="#443A2C" /><rect x="644" y="154" width="20" height="178" rx="6" fill="var(--c1)" /><rect x="680" y="178" width="20" height="154" rx="6" fill="#443A2C" />
+                  <rect x="80" y="380" width="196" height="106" rx="16" fill="#1E1A14" stroke="#332B21" /><rect x="298" y="380" width="196" height="106" rx="16" fill="#1E1A14" stroke="#332B21" /><rect x="516" y="380" width="196" height="106" rx="16" fill="#1E1A14" stroke="#332B21" />
+                  <rect x="104" y="406" width="64" height="9" rx="4" fill="#443A2C" /><rect x="104" y="430" width="104" height="18" rx="9" fill="#5A4C3A" />
+                  <rect x="322" y="406" width="64" height="9" rx="4" fill="#443A2C" /><rect x="322" y="430" width="104" height="18" rx="9" fill="#5A4C3A" />
+                  <rect x="540" y="406" width="64" height="9" rx="4" fill="#443A2C" /><rect x="540" y="430" width="104" height="18" rx="9" fill="#5A4C3A" />
+                </svg>
+                <span class="work-card__tag">Websites</span>
+                <span class="work-card__result">+64% demo requests</span>
+              </div>
+              <div class="work-card__body">
+                <div class="work-card__head"><h3>Nova Finance</h3><span class="work-card__year">2026</span></div>
+                <p class="work-card__type">Fintech Website</p>
+                <p class="work-card__desc">A trust-first marketing site for a fintech launching its first consumer product — clear pricing, live rate widgets and a 2.1s faster load than the old build.</p>
+                <ul class="tags"><li>Next.js</li><li>Design System</li><li>Motion</li></ul>
+                <a class="btn btn--outline btn--sm work-card__cta" href="contact.html?project=nova-finance">
+                  View Project
+                  <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Lumina -->
+            <article class="card spotlight work-card reveal" data-delay="90">
+              <div class="work-card__media">
+                <svg class="work-card__art" viewBox="0 0 800 560" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Lumina storefront artwork" style="--c1: #d9a441; --c2: #e4572e">
+                  <rect width="800" height="560" fill="#16130F" />
+                  <circle cx="660" cy="70" r="190" fill="var(--c1)" opacity=".14" />
+                  <circle cx="110" cy="520" r="160" fill="var(--c2)" opacity=".1" />
+                  <rect x="48" y="44" width="704" height="472" rx="20" fill="#1A1712" stroke="#332B21" />
+                  <path d="M48 64a20 20 0 0 1 20-20h664a20 20 0 0 1 20 20v22H48Z" fill="#211C16" />
+                  <circle cx="76" cy="65" r="5" fill="#5A4C3A" /><circle cx="94" cy="65" r="5" fill="#5A4C3A" /><circle cx="112" cy="65" r="5" fill="#5A4C3A" />
+                  <rect x="80" y="116" width="86" height="12" rx="6" fill="#5A4C3A" />
+                  <rect x="330" y="118" width="52" height="9" rx="4" fill="#443A2C" /><rect x="400" y="118" width="52" height="9" rx="4" fill="#443A2C" /><rect x="470" y="118" width="52" height="9" rx="4" fill="#443A2C" />
+                  <circle cx="700" cy="122" r="15" fill="#272119" stroke="#443A2C" /><circle cx="706" cy="114" r="6" fill="var(--c1)" />
+                  <rect x="80" y="164" width="330" height="230" rx="16" fill="#1E1A14" stroke="#332B21" />
+                  <circle cx="245" cy="272" r="76" fill="var(--c1)" opacity=".9" />
+                  <circle cx="245" cy="272" r="106" fill="none" stroke="var(--c1)" stroke-width="1.5" opacity=".3" />
+                  <rect x="444" y="182" width="120" height="10" rx="5" fill="#443A2C" />
+                  <rect x="444" y="208" width="248" height="18" rx="9" fill="#655641" /><rect x="444" y="240" width="200" height="18" rx="9" fill="#655641" />
+                  <rect x="444" y="282" width="278" height="9" rx="4" fill="#3A3126" /><rect x="444" y="302" width="240" height="9" rx="4" fill="#3A3126" />
+                  <rect x="444" y="336" width="150" height="44" rx="22" fill="var(--c1)" />
+                  <rect x="608" y="336" width="114" height="44" rx="22" fill="none" stroke="#5A4C3A" stroke-width="1.6" />
+                  <rect x="80" y="418" width="148" height="70" rx="16" fill="#1E1A14" stroke="#332B21" /><rect x="246" y="418" width="148" height="70" rx="16" fill="#1E1A14" stroke="#332B21" /><rect x="412" y="418" width="148" height="70" rx="16" fill="#1E1A14" stroke="#332B21" /><rect x="578" y="418" width="148" height="70" rx="16" fill="#1E1A14" stroke="#332B21" />
+                  <rect x="96" y="432" width="42" height="42" rx="10" fill="var(--c1)" opacity=".25" /><rect x="262" y="432" width="42" height="42" rx="10" fill="var(--c1)" opacity=".45" /><rect x="428" y="432" width="42" height="42" rx="10" fill="var(--c1)" opacity=".65" /><rect x="594" y="432" width="42" height="42" rx="10" fill="var(--c1)" opacity=".85" />
+                </svg>
+                <span class="work-card__tag">E-Commerce</span>
+                <span class="work-card__result">+38% conversion rate</span>
+              </div>
+              <div class="work-card__body">
+                <div class="work-card__head"><h3>Lumina</h3><span class="work-card__year">2026</span></div>
+                <p class="work-card__type">E-Commerce Store</p>
+                <p class="work-card__desc">A headless storefront for a lighting brand: cinematic product pages, a three-step checkout and merchandising the team can edit without a developer.</p>
+                <ul class="tags"><li>Shopify Headless</li><li>CRO</li><li>Art Direction</li></ul>
+                <a class="btn btn--outline btn--sm work-card__cta" href="contact.html?project=lumina">
+                  View Project
+                  <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- UrbanNest -->
+            <article class="card spotlight work-card reveal">
+              <div class="work-card__media">
+                <svg class="work-card__art" viewBox="0 0 800 560" preserveAspectRatio="xMidYMid slice" role="img" aria-label="UrbanNest property platform artwork" style="--c1: #c07a4e; --c2: #e0b088">
+                  <rect width="800" height="560" fill="#16130F" />
+                  <circle cx="650" cy="90" r="190" fill="var(--c1)" opacity=".14" />
+                  <circle cx="120" cy="520" r="160" fill="var(--c2)" opacity=".08" />
+                  <rect x="48" y="44" width="704" height="472" rx="20" fill="#1A1712" stroke="#332B21" />
+                  <path d="M48 64a20 20 0 0 1 20-20h664a20 20 0 0 1 20 20v22H48Z" fill="#211C16" />
+                  <circle cx="76" cy="65" r="5" fill="#5A4C3A" /><circle cx="94" cy="65" r="5" fill="#5A4C3A" /><circle cx="112" cy="65" r="5" fill="#5A4C3A" />
+                  <rect x="80" y="108" width="360" height="40" rx="20" fill="#211C16" stroke="#3A3126" />
+                  <circle cx="106" cy="128" r="7" fill="none" stroke="#655641" stroke-width="2.5" />
+                  <rect x="122" y="124" width="150" height="9" rx="4" fill="#443A2C" />
+                  <rect x="462" y="108" width="118" height="40" rx="20" fill="var(--c1)" />
+                  <rect x="452" y="172" width="272" height="314" rx="16" fill="#1E1A14" stroke="#332B21" />
+                  <path d="M452 250h272M452 330h272M452 410h272M540 172v314M632 172v314" stroke="#332B21" stroke-width="2" />
+                  <path d="M452 300c60-40 120 30 180-14s70 20 92 6" stroke="var(--c1)" stroke-width="2.5" fill="none" opacity=".5" />
+                  <circle cx="566" cy="286" r="24" fill="var(--c1)" opacity=".18" /><circle cx="566" cy="286" r="9" fill="var(--c1)" />
+                  <circle cx="668" cy="386" r="7" fill="#655641" /><circle cx="496" cy="392" r="7" fill="#655641" />
+                  <rect x="80" y="172" width="340" height="146" rx="16" fill="#1E1A14" stroke="#332B21" />
+                  <rect x="100" y="192" width="120" height="106" rx="12" fill="var(--c1)" opacity=".75" />
+                  <rect x="236" y="202" width="150" height="12" rx="6" fill="#5A4C3A" /><rect x="236" y="226" width="104" height="9" rx="4" fill="#443A2C" /><rect x="236" y="246" width="126" height="9" rx="4" fill="#443A2C" /><rect x="236" y="270" width="76" height="20" rx="10" fill="var(--c2)" opacity=".3" />
+                  <rect x="80" y="334" width="340" height="146" rx="16" fill="#1E1A14" stroke="#332B21" />
+                  <rect x="100" y="354" width="120" height="106" rx="12" fill="var(--c2)" opacity=".7" />
+                  <rect x="236" y="364" width="150" height="12" rx="6" fill="#5A4C3A" /><rect x="236" y="388" width="104" height="9" rx="4" fill="#443A2C" /><rect x="236" y="408" width="126" height="9" rx="4" fill="#443A2C" /><rect x="236" y="432" width="76" height="20" rx="10" fill="var(--c2)" opacity=".3" />
+                </svg>
+                <span class="work-card__tag">UI/UX</span>
+                <span class="work-card__result">2.4× listings saved</span>
+              </div>
+              <div class="work-card__body">
+                <div class="work-card__head"><h3>UrbanNest</h3><span class="work-card__year">2025</span></div>
+                <p class="work-card__type">Real Estate Platform</p>
+                <p class="work-card__desc">Search, map and saved-listing experience for a property marketplace, redesigned around how buyers actually shortlist homes on a phone.</p>
+                <ul class="tags"><li>Product UX</li><li>Prototyping</li><li>Design System</li></ul>
+                <a class="btn btn--outline btn--sm work-card__cta" href="contact.html?project=urbannest">
+                  View Project
+                  <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Vertex -->
+            <article class="card spotlight work-card reveal" data-delay="90">
+              <div class="work-card__media">
+                <svg class="work-card__art" viewBox="0 0 800 560" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Vertex SaaS website artwork" style="--c1: #7d6b8f; --c2: #b0a3bd">
+                  <rect width="800" height="560" fill="#16130F" />
+                  <circle cx="640" cy="80" r="200" fill="var(--c1)" opacity=".18" />
+                  <circle cx="110" cy="520" r="160" fill="var(--c2)" opacity=".1" />
+                  <rect x="48" y="44" width="704" height="472" rx="20" fill="#1A1712" stroke="#332B21" />
+                  <path d="M48 64a20 20 0 0 1 20-20h664a20 20 0 0 1 20 20v22H48Z" fill="#211C16" />
+                  <circle cx="76" cy="65" r="5" fill="#5A4C3A" /><circle cx="94" cy="65" r="5" fill="#5A4C3A" /><circle cx="112" cy="65" r="5" fill="#5A4C3A" />
+                  <rect x="80" y="118" width="74" height="12" rx="6" fill="#5A4C3A" />
+                  <rect x="640" y="108" width="84" height="30" rx="15" fill="var(--c1)" />
+                  <rect x="80" y="182" width="240" height="20" rx="10" fill="#6E5D46" /><rect x="80" y="216" width="330" height="20" rx="10" fill="#6E5D46" /><rect x="80" y="250" width="180" height="20" rx="10" fill="var(--c1)" />
+                  <rect x="80" y="298" width="300" height="10" rx="5" fill="#3A3126" /><rect x="80" y="320" width="260" height="10" rx="5" fill="#3A3126" />
+                  <rect x="80" y="358" width="136" height="42" rx="21" fill="var(--c1)" />
+                  <rect x="230" y="358" width="120" height="42" rx="21" fill="none" stroke="#5A4C3A" stroke-width="1.6" />
+                  <rect x="440" y="168" width="284" height="150" rx="16" fill="#1E1A14" stroke="#332B21" />
+                  <rect x="466" y="196" width="90" height="9" rx="4" fill="#443A2C" /><rect x="466" y="218" width="140" height="22" rx="11" fill="#6E5D46" />
+                  <path d="M466 290 512 268 558 278 604 246 650 256 698 224" fill="none" stroke="var(--c2)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <rect x="472" y="336" width="252" height="150" rx="16" fill="#1E1A14" stroke="#332B21" />
+                  <circle cx="502" cy="374" r="11" fill="var(--c1)" /><rect x="524" y="369" width="118" height="10" rx="5" fill="#4A3F30" />
+                  <circle cx="502" cy="412" r="11" fill="var(--c1)" opacity=".7" /><rect x="524" y="407" width="150" height="10" rx="5" fill="#4A3F30" />
+                  <circle cx="502" cy="450" r="11" fill="var(--c1)" opacity=".45" /><rect x="524" y="445" width="118" height="10" rx="5" fill="#4A3F30" />
+                  <rect x="380" y="424" width="72" height="72" rx="20" fill="var(--c2)" opacity=".9" />
+                </svg>
+                <span class="work-card__tag">Websites</span>
+                <span class="work-card__result">3× organic traffic</span>
+              </div>
+              <div class="work-card__body">
+                <div class="work-card__head"><h3>Vertex</h3><span class="work-card__year">2025</span></div>
+                <p class="work-card__type">SaaS Website</p>
+                <p class="work-card__desc">Positioning, copy and a modular page system for a B2B analytics platform, letting marketing ship new campaign pages in hours instead of sprints.</p>
+                <ul class="tags"><li>Webflow</li><li>Copywriting</li><li>SEO</li></ul>
+                <a class="btn btn--outline btn--sm work-card__cta" href="contact.html?project=vertex">
+                  View Project
+                  <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= Process -->
+      <section class="section section--alt">
+        <div class="glow glow--cyan" style="right: -8%; top: 10%; width: 400px; height: 400px"></div>
+
+        <div class="shell section__inner">
+          <div class="heading heading--center">
+            <span class="eyebrow reveal">How we work</span>
+            <h2 class="heading__title reveal" data-delay="80">A process that keeps <em>projects on track.</em></h2>
+            <p class="heading__lead reveal" data-delay="160">
+              Four stages, clear deliverables at each one. You always know what is happening this week and what lands next.
+            </p>
+          </div>
+
+          <ol class="grid-4 mt-3">
+            <li class="reveal">
+              <div class="step step--linked">
+                <div class="step__top"><span class="step__num">01</span><span class="step__dot"></span></div>
+                <h3>Discover</h3>
+                <p>We start with questions. Goals, audience, competitors and constraints — mapped into a brief everyone agrees on before a single pixel moves.</p>
+                <ul class="step__list">
+                  <li><svg class="ic ic--xs" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 6.5" /></svg> Discovery workshop</li>
+                  <li><svg class="ic ic--xs" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 6.5" /></svg> Research &amp; audit</li>
+                  <li><svg class="ic ic--xs" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 6.5" /></svg> Scope and roadmap</li>
+                </ul>
+              </div>
+            </li>
+            <li class="reveal" data-delay="90">
+              <div class="step step--linked">
+                <div class="step__top"><span class="step__num">02</span><span class="step__dot"></span></div>
+                <h3>Design</h3>
+                <p>Wireframes turn into a design system: type, colour, motion and components crafted to look sharp and convert on every screen size.</p>
+                <ul class="step__list">
+                  <li><svg class="ic ic--xs" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 6.5" /></svg> Wireframes &amp; UX flows</li>
+                  <li><svg class="ic ic--xs" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 6.5" /></svg> Visual design system</li>
+                  <li><svg class="ic ic--xs" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 6.5" /></svg> Interactive prototype</li>
+                </ul>
+              </div>
+            </li>
+            <li class="reveal" data-delay="180">
+              <div class="step step--linked">
+                <div class="step__top"><span class="step__num">03</span><span class="step__dot"></span></div>
+                <h3>Develop</h3>
+                <p>Clean, semantic, accessible code built for speed. Component-driven front-ends, solid integrations and a CMS your team can actually use.</p>
+                <ul class="step__list">
+                  <li><svg class="ic ic--xs" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 6.5" /></svg> Responsive build</li>
+                  <li><svg class="ic ic--xs" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 6.5" /></svg> CMS &amp; integrations</li>
+                  <li><svg class="ic ic--xs" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 6.5" /></svg> Performance budget</li>
+                </ul>
+              </div>
+            </li>
+            <li class="reveal" data-delay="270">
+              <div class="step">
+                <div class="step__top"><span class="step__num">04</span><span class="step__dot"></span></div>
+                <h3>Launch</h3>
+                <p>We test, tune and ship — then stay on to measure what happens next and keep improving the numbers that matter to your business.</p>
+                <ul class="step__list">
+                  <li><svg class="ic ic--xs" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 6.5" /></svg> QA &amp; accessibility pass</li>
+                  <li><svg class="ic ic--xs" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 6.5" /></svg> Deploy &amp; analytics</li>
+                  <li><svg class="ic ic--xs" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 6.5" /></svg> Ongoing support</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- =========================================================== CTA -->
+      <section class="section">
+        <div class="glow glow--accent" style="left: 50%; top: 50%; width: 620px; height: 620px; transform: translate(-50%, -50%)"></div>
+        <div class="glow glow--violet" style="right: 8%; top: 10%; width: 300px; height: 300px"></div>
+
+        <div class="shell section__inner">
+          <div class="cta-band glass">
+            <div class="grid-lines"></div>
+            <div class="cta-band__inner">
+              <span class="eyebrow reveal">Next step</span>
+              <h2 class="reveal" data-delay="80">Have a project in mind?</h2>
+              <p class="reveal" data-delay="150">Let's build something amazing together.</p>
+              <div class="cta-band__actions reveal" data-delay="230">
+                <a class="btn btn--primary btn--lg" href="contact.html">
+                  Let's Talk
+                  <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12h15m-5.5-5.5L19.5 12 14 17.5" /></svg>
+                </a>
+                <a class="btn btn--secondary btn--lg" href="mailto:hello@webloopagency.com">
+                  hello@webloopagency.com
+                  <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" /><path d="m4 7.5 7.1 5a1.6 1.6 0 0 0 1.8 0l7.1-5" /></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================ Footer -->
+    <footer class="footer">
+      <div class="glow glow--accent" style="left: 50%; top: 100%; width: 520px; height: 520px; transform: translate(-50%, -50%)"></div>
+
+      <div class="shell">
+        <div class="footer__grid">
+          <div class="footer__about">
+            <a class="logo" href="index.html" aria-label="Webloop Agency — home">
+              <span class="logo__mark">
+                <svg viewBox="0 0 24 24" width="21" height="21" fill="none" aria-hidden="true">
+                  <path d="M4 8.2 7 16l3-5.4 3 5.4 3-7.8" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
+                  <circle cx="19" cy="8.6" r="1.9" fill="currentColor" />
+                </svg>
+              </span>
+              <span class="logo__text">
+                <span class="logo__name">WEBLOOP</span>
+                <span class="logo__label">AGENCY</span>
+              </span>
+            </a>
+            <p>We build digital experiences that move businesses forward.</p>
+            <div class="socials">
+              <a href="https://instagram.com/webloopagency" target="_blank" rel="noreferrer noopener" aria-label="Webloop Agency on Instagram">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5.2" fill="none" stroke="currentColor" stroke-width="1.7" /><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7" /><circle cx="17.1" cy="6.9" r="1.2" fill="currentColor" /></svg>
+              </a>
+              <a href="https://linkedin.com/company/webloopagency" target="_blank" rel="noreferrer noopener" aria-label="Webloop Agency on LinkedIn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="4" /><path d="M7.6 10.2v7M7.6 7.2v.1" stroke-width="1.9" /><path d="M11.4 17.2v-7m0 2.2c.5-1.4 1.7-2.2 3-2.2 1.7 0 2.6 1.1 2.6 3v4.2" /></svg>
+              </a>
+              <a href="https://facebook.com/webloopagency" target="_blank" rel="noreferrer noopener" aria-label="Webloop Agency on Facebook">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="4" /><path d="M14.8 8.2h-1.3c-1 0-1.5.6-1.5 1.6V11h2.6l-.4 2.6h-2.2v5" /><path d="M9.6 11h2.4" /></svg>
+              </a>
+              <a href="https://behance.net/webloopagency" target="_blank" rel="noreferrer noopener" aria-label="Webloop Agency on Behance">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M2.6 7.4h4.3c1.6 0 2.5.8 2.5 2 0 1-.6 1.7-1.5 1.9 1.2.2 1.9 1 1.9 2.2 0 1.5-1.1 2.5-3 2.5H2.6V7.4Zm2 3.3h1.9c.7 0 1-.3 1-.8s-.3-.8-1-.8H4.6v1.6Zm0 3.7h2.1c.8 0 1.2-.3 1.2-.9s-.4-.9-1.2-.9H4.6v1.8Z" fill="currentColor" /><path d="M14.2 8.2h4.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /><path d="M12.6 13.1h6.8c0-2-1.3-3.4-3.3-3.4s-3.5 1.5-3.5 3.5 1.4 3.5 3.5 3.5c1.5 0 2.7-.7 3.1-1.9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </a>
+            </div>
+          </div>
+
+          <nav aria-label="Footer navigation">
+            <h2>Navigation</h2>
+            <ul class="footer__list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <nav aria-label="Footer services">
+            <h2>Services</h2>
+            <ul class="footer__list">
+              <li><a href="services.html#web-development">Web Development</a></li>
+              <li><a href="services.html#ui-ux-design">UI/UX Design</a></li>
+              <li><a href="services.html#branding">Branding</a></li>
+              <li><a href="services.html#seo">SEO</a></li>
+              <li><a href="services.html#ecommerce-development">E-Commerce</a></li>
+            </ul>
+          </nav>
+
+          <div>
+            <h2>Contact</h2>
+            <ul class="footer__list">
+              <li>
+                <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" /><path d="m4 7.5 7.1 5a1.6 1.6 0 0 0 1.8 0l7.1-5" /></svg>
+                <a href="mailto:hello@webloopagency.com">hello@webloopagency.com</a>
+              </li>
+              <li>
+                <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 3.5h2.1l1.4 3.6-1.8 1.4a11.6 11.6 0 0 0 5.6 5.6l1.4-1.8 3.6 1.4v2.1a2.6 2.6 0 0 1-2.9 2.6C10.5 17.7 6.3 13.5 4.6 6.4a2.6 2.6 0 0 1 2.6-2.9Z" /></svg>
+                <a href="tel:+923001234567">+92 300 1234567</a>
+              </li>
+              <li>
+                <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6.5-5.6 6.5-10.4A6.5 6.5 0 0 0 5.5 10.6C5.5 15.4 12 21 12 21Z" /><circle cx="12" cy="10.4" r="2.5" /></svg>
+                Karachi, Pakistan
+              </li>
+            </ul>
+            <a class="link-arrow" href="contact.html" style="margin-top: 1.75rem">
+              Start a project
+              <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5m0 0H9m7.5 0V15" /></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>&copy; <span data-year>2026</span> Webloop Agency. All rights reserved.</p>
+          <p class="footer__status"><span class="pulse-dot"></span> Available for new projects</p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="to-top" type="button" aria-label="Back to top">
+      <svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19.5v-15M6.5 10 12 4.5 17.5 10" /></svg>
+    </button>
+
+    <script src="assets/js/main.js?v=2" defer></script>
+  </body>
+</html>
