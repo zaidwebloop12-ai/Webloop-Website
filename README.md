@@ -28,16 +28,31 @@ webloop-agency/
 
 Everything is driven by custom properties at the top of `assets/css/style.css`:
 
+The four brand colours:
+
 | Token | Value | Used for |
 | --- | --- | --- |
-| `--ink` | `#06070D` | Page background |
-| `--ink-soft` / `--surface` | `#0A0C15` / `#0E1120` | Alternating sections, cards |
-| `--accent` | `#C8FF4D` | Primary accent, CTAs, highlights |
-| `--violet` / `--cyan` | `#7C5CFF` / `#35E0D8` | Secondary glows and gradients |
-| `--fg` / `--muted` | `#EEF1F8` / `#9AA1BB` | Body and secondary text |
+| `--cream` / `--paper` | `#FFEED6` | Page background |
+| `--sage` | `#A5AF79` | Secondary accents, check marks, artwork |
+| `--olive` | `#827148` | Logo tile, hairlines, artwork |
+| `--peach` | `#E8A07C` | Primary buttons, hover rules, markers |
 
-Type: **Sora** for headings, **Inter** for body (loaded from Google Fonts with
-system fallbacks). Change the palette in one place and the whole site follows.
+Three darker shades are derived from the same hues so small text clears
+WCAG AA on cream — the brand colours themselves stay the visible identity:
+
+| Token | Value | Contrast on cream |
+| --- | --- | --- |
+| `--ink` | `#2E2718` | 13.0 : 1 — body copy, headings |
+| `--muted` / `--olive-ink` | `#6E6047` / `#6B5C39` | 5.4 : 1 / 5.7 : 1 — secondary text, mono labels |
+| `--accent-ink` | `#9A5029` | 5.2 : 1 — accent text, italic highlights |
+
+Supporting surfaces: `--card` `#FFF7EA` (raised panels) and `--paper-alt`
+`#F8E6C6` (alternating sections).
+
+Type: **Fraunces** for display headings (variable serif — the `SOFT` and
+`WONK` axes give it the slightly irregular, drawn feel), **Inter** for body,
+**IBM Plex Mono** for labels, numerals and eyebrows. Change the palette in one
+place and the whole site follows.
 
 ## Reusable pieces
 
