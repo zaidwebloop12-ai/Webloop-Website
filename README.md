@@ -86,21 +86,35 @@ don't use it.
 | `initBackToTop` | Floating scroll-to-top button |
 | `initYear` | Keeps the footer copyright year current |
 
-## Images
+## Images — all placeholders, ready to swap
 
-Project thumbnails, team portraits and the location map are **inline SVG
-artwork** rather than bitmaps — they are sharp at any size, add no network
-requests, and never 404.
+Every photo slot is a plain `<img>` pointing at a **dummy placeholder** in
+`assets/img/`. Each one is labelled with its name and the size it expects, so
+you can see at a glance what belongs there.
 
-To swap in real photography, replace the `<svg class="work-card__art">` block
-inside a card with an image at the same aspect ratio:
+| Folder | Files | Ratio | Suggested size |
+| --- | --- | --- | --- |
+| `assets/img/hero/` | `studio` | 4 : 5 | 1000 × 1250 |
+| `assets/img/work/` | 8 project shots | 10 : 7 | 1200 × 840 |
+| `assets/img/team/` | 4 portraits | 4 : 5 | 800 × 1000 |
+| `assets/img/studio/` | `desk`, `team`, `wall` | 4 : 5 and 16 : 9 | 800 × 1000 / 1280 × 720 |
+| `assets/img/map/` | `karachi` | 2 : 1 | 1280 × 640 |
+
+**To use your own photo**, drop it in the matching folder and update the one
+`src` — for example in `portfolio.html`:
 
 ```html
-<img class="work-card__art" src="assets/img/nova-finance.jpg"
-     alt="Nova Finance website" width="800" height="560" loading="lazy" />
+<img class="work-card__art" src="assets/img/work/nova-finance.jpg"
+     alt="Nova Finance website" width="1200" height="840" loading="lazy" />
 ```
 
-(`10 / 7` for project cards, `4 / 5` for team portraits.)
+Keep the `alt`, `width` and `height` attributes. The dimensions prevent the
+page jumping around while images load, and the CSS crops with `object-fit:
+cover`, so anything near the right ratio will sit correctly.
+
+If you'd rather embed a live Google Map on the contact page, replace the
+`<img>` inside `.map` with your embed `<iframe>` — the surrounding card and
+caption will still work.
 
 ## Contact form
 

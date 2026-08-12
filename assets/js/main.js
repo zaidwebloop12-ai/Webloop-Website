@@ -410,13 +410,19 @@
       });
     }
 
-    // Prefill "Service Needed" when arriving from a service card.
+    // Prefill the service when arriving from a service card. Both sides are
+    // stripped to bare letters so "E-Commerce Development" still matches
+    // "ecommerce-development".
+    var slug = function (value) {
+      return String(value).toLowerCase().replace(/[^a-z]/g, '');
+    };
+
     var params = new URLSearchParams(window.location.search);
     var wanted = params.get('service');
     if (wanted && form.elements.service) {
       var select = form.elements.service;
       Array.prototype.forEach.call(select.options, function (option) {
-        if (option.value.toLowerCase().replace(/[^a-z]+/g, '-') === wanted) {
+        if (option.value && slug(option.value) === slug(wanted)) {
           select.value = option.value;
           select.classList.add('has-value');
         }

@@ -2545,6 +2545,114 @@ p {
   stroke: none;
 }
 
+/* ---------------------------------------------------------------- Images */
+/* Every photo slot is a plain <img>. Swap the file, keep the ratio. */
+.work-card__art,
+.team-card__media img,
+.collage__item img,
+.map img,
+.hero__photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+figure {
+  margin: 0;
+}
+
+/* Mono caption under a photo — the small editorial tell */
+.figure-note {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--olive-ink);
+}
+.figure-note span:last-child {
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+/* Section counter — 01 / 06 */
+.section-index {
+  display: block;
+  margin-bottom: 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: rgba(130, 113, 72, 0.7);
+}
+
+/* Hero photo frame */
+.hero__photo {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--line);
+  background: var(--paper-alt);
+  box-shadow: var(--shadow-card);
+}
+
+/* Aside set in italic serif — reads like a margin note, not a callout box */
+.note {
+  max-width: 34rem;
+  margin-top: 2rem;
+  padding-left: 1.1rem;
+  border-left: 2px solid var(--peach);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-variation-settings: 'SOFT' 40, 'WONK' 1, 'opsz' 30;
+  font-size: 1.02rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.note--center {
+  margin-inline: auto;
+  text-align: left;
+}
+
+/* Grid breakers — one wide card stops the layout reading as a spreadsheet */
+@media (min-width: 640px) {
+  .service-card--wide {
+    grid-column: span 2;
+  }
+  .service-card--wide h3 {
+    font-size: 1.6rem;
+  }
+  .service-card--wide p {
+    max-width: 34rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .work-card--feature {
+    grid-column: 1 / -1;
+    flex-direction: row;
+  }
+  .work-card--feature .work-card__media {
+    width: 56%;
+    aspect-ratio: auto;
+    border-bottom: 0;
+    border-right: 1px solid var(--line);
+  }
+  .work-card--feature .work-card__body {
+    width: 44%;
+    justify-content: center;
+    padding: 2.6rem 2.4rem;
+  }
+  .work-card--feature .work-card__head h3 {
+    font-size: 2rem;
+  }
+}
+
 /* ------------------------------------------------------------- Utility */
 .grid-2 {
   display: grid;

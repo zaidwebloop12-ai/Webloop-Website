@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="Placeholder image">
+  <rect width="1280" height="720" fill="#F4E2C2" />
+  <rect x="32" y="32" width="1216" height="656" fill="none" stroke="#827148" stroke-opacity="0.45" stroke-width="2" stroke-dasharray="10 8" />
+  <g transform="translate(640 295.2)" fill="none" stroke="#827148" stroke-opacity="0.55" stroke-width="3.96" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-72" y="-54" width="144" height="108" rx="8.64" />
+    <circle cx="-28.8" cy="-20.160000000000004" r="11.52" />
+    <path d="M-72 36 L-18 -7.2 L14.4 25.2 L39.6 3.6 L72 39.6" />
+  </g>
+  <text x="640" y="421.2" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="30" fill="#6B5C39">studio / wall</text>
+  <text x="640" y="471.6" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="23" fill="#827148" fill-opacity="0.75">1280 × 720</text>
+  <text x="640" y="529.2" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="20" fill="#827148" fill-opacity="0.6" letter-spacing="4.32">REPLACE ME</text>
+</svg>

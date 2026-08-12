@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" role="img" aria-label="Placeholder image">
+  <rect width="1280" height="640" fill="#F3E4C6" />
+  <rect x="29" y="29" width="1222" height="582" fill="none" stroke="#827148" stroke-opacity="0.45" stroke-width="2" stroke-dasharray="10 8" />
+  <g transform="translate(640 262.4)" fill="none" stroke="#827148" stroke-opacity="0.55" stroke-width="3.52" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-64" y="-48" width="128" height="96" rx="7.68" />
+    <circle cx="-25.6" cy="-17.92" r="10.24" />
+    <path d="M-64 32 L-16 -6.4 L12.8 22.4 L35.2 3.2 L64 35.2" />
+  </g>
+  <text x="640" y="374.4" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="27" fill="#6B5C39">map / Karachi</text>
+  <text x="640" y="419.2" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="20" fill="#827148" fill-opacity="0.75">1280 × 640</text>
+  <text x="640" y="470.4" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="18" fill="#827148" fill-opacity="0.6" letter-spacing="3.84">REPLACE ME</text>
+</svg>
